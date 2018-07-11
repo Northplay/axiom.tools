@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "./node_modules/.bin/next build && ./node_modules/.bin/next start -p $PORT"
   },
   "dependencies": {
     "next": "^6.1.1",
