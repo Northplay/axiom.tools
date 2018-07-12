@@ -25,12 +25,20 @@ injectGlobal`
 
 const Main = ({ children }) => <div>
   <Head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Axiom</title>
+
+    <meta httpEquiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="description" content="A framework for better streaming Apple TV Apps" />
+    <meta name="google-site-verification" content="oA5UKv_3jX3wjJDQBm1ahC6FjkPY-cvKurWawTbRhHY" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
     <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+
   </Head>
   <div>
     {children}
