@@ -12,6 +12,12 @@ const Container = styled(StyledContainer)`
   color: #ddd;
   align-items: center;
   display: flex;
+
+  @media (max-width: 800px) {
+    background-position: bottom center;
+    min-height: unset;
+    padding: 100px 0px 200px 0px;
+  }
 `;
 
 const Content = styled(StyledContent)`
@@ -25,6 +31,10 @@ const Graphic = styled.div`
   align-items: center;
   position: relative;
   width: 45%;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 const Television = styled.img`
@@ -37,6 +47,11 @@ const Text = styled.div`
   flex: 0 1 55%;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    flex: 0 1 100%;
+  }
 `;
 
 const Bread = styled.p`
@@ -56,7 +71,7 @@ const Pricing = styled(Button)`
   margin-top: 40px;
 `;
 
-const Header = () => <Container>
+const Header = ({ pricing }) => <Container>
   <Content>
     <Graphic>
       <Television src="/static/header-tv.png" />
@@ -69,7 +84,16 @@ const Header = () => <Container>
         native experiences for the big screen and created a system
         of reusable components that will make your Apple TV app both
         affordable and powerful.
-        <Pricing text="Pricing" emoji="👇" />
+        <Pricing
+          text="Pricing"
+          emoji="👇"
+          onClick={() => {
+            if (window !== undefined) {
+              const element = document.getElementById('pricing');
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }}
+        />
       </Bread>
     </Text>
   </Content>

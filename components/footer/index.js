@@ -12,6 +12,12 @@ const Content = styled(StyledContent)`
   color: #818181;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const About = styled.div`
@@ -19,12 +25,24 @@ const About = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+
+  @media (max-width: 800px) {
+    flex: 0 1 auto;
+    margin-bottom: 75px;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Bear = styled.img`
   flex: 0 0 98px;
   height: 94px;
   width: 98px;
+
+  @media (max-width: 800px) {
+    flex: unset;
+    margin-bottom: 30px;
+  }
 `;
 
 const Details = styled.div`
@@ -32,6 +50,12 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+
+  @media (max-width: 800px) {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const Name = styled.h4`
@@ -50,6 +74,11 @@ const Social = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 800px) {
+    flex: 1 1 100%;
+    align-items: center;
+  }
 `;
 
 const Link = styled.a`

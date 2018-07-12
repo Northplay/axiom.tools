@@ -39,6 +39,12 @@ const Models = styled.div`
   justify-content: space-between;
   flex-direction: row;
   margin: 20px 0;
+
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Model = styled.div`
@@ -49,6 +55,11 @@ const Model = styled.div`
   flex-flow: column nowrap;
   padding: 30px;
   align-items: center;
+
+  @media (max-width: 800px) {
+    flex: 0 1 600px;
+    margin-bottom: 30px;
+  }
 `;
 
 const AppleTV = styled.img``;
@@ -98,6 +109,13 @@ const Addons = styled.div`
   display: flex;
   flex-flow: column nowrap;
   margin: 60px 0;
+
+  @media (max-width: 800px) {
+    /* padding: 0 30px; */
+    /* margin: 30px ; */
+    margin: 30px 60px;
+    width: 100%;
+  }
 `;
 
 const AddonTitle = styled.h3`
@@ -105,6 +123,13 @@ const AddonTitle = styled.h3`
   line-height: 1.1em;
   margin-left: 20px;
   margin-top: 20px;
+
+  @media (max-width: 800px) {
+    text-align: center;
+    margin-left: 0;
+    font-size: 22px;
+    margin-top: 30px;
+  }
 `;
 
 const AddOnItems = styled.div`
@@ -113,6 +138,11 @@ const AddOnItems = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 const AddOn = styled.div`
@@ -122,6 +152,10 @@ const AddOn = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
+
+  @media (max-width: 800px) {
+    flex: 0 1 600px;
+  }
 `;
 
 const Computer = styled.img`
@@ -148,7 +182,7 @@ const Contact = styled(Button)`
   margin: 60px;
 `;
 
-const Pricing = () => <Container>
+const Pricing = () => <Container id="pricing">
   <Content>
     <Title>
       Pricing

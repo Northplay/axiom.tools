@@ -5,7 +5,13 @@ import { StyledContainer, StyledContent } from '../../lib/styles';
 
 const Content = StyledContent.extend`
   justify-content: space-between;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
 `;
 
 const App = styled.a`
@@ -15,6 +21,12 @@ const App = styled.a`
   text-decoration: none;
   transition: 0.15s ease;
   margin-bottom: 90px;
+
+  @media (max-width: 800px) {
+    flex: 0 1 100%;
+    max-width: 490px;
+    margin-bottom: 50px;
+  }
 
   &:hover {
     transform: scale(1.05, 1.05);

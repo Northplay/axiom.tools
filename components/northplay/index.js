@@ -13,7 +13,6 @@ const Container = styled(StyledContainer)`
 const Content = styled(StyledContent)`
   align-items: center;
   flex-direction: column;
-  /* justify-content: center; */
   max-width: 1080px;
 `;
 

@@ -19,6 +19,10 @@ const Header = styled.h1`
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 90px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 50px;
+  }
 `;
 
 const AppleTV = styled.img`
@@ -30,6 +34,11 @@ const AppleTV = styled.img`
 const Text = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 const Block = styled.div`
@@ -37,6 +46,11 @@ const Block = styled.div`
   margin-bottom: 75px;
   display: flex;
   flex-flow: row wrap;
+
+  @media (max-width: 800px) {
+    flex: 0 1 100%;
+    margin-bottom: 50px;
+  }
 `;
 
 const Break = styled.div`
