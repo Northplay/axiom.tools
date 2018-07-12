@@ -44,7 +44,7 @@ const Contact = styled(Button)`
   margin-top: 50px;
 
   &:hover {
-    box-shadow: 0px 5px 20px 10px rgba(255, 239, 63, 0.08);
+    box-shadow: 0px 0px 20px 10px rgba(255, 239, 63, 0.4);
   }
 `;
 

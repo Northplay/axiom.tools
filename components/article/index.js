@@ -81,7 +81,7 @@ const Article = () => <StyledContainer>
         <Break />
         <Span>
           To many content providers it is yet another platform they need to support. Solutions are thrown
-          together in TVML and create subpar experiences for users. If you’ve used more than a few apps on Apple
+          together in TVMLKit and create subpar experiences for users. If you’ve used more than a few apps on Apple
           TV, you know what we’re talking about.
         </Span>
         <Break />

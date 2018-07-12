@@ -21,7 +21,7 @@ const StyledButton = styled.button`
 
   &:hover {
     transform: scale(1.1, 1.1);
-    box-shadow: 0 50px 20px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 20px 10px rgba(0, 255, 255,0.4);
   }
 `;
 

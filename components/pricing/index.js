@@ -62,7 +62,14 @@ const Model = styled.div`
   }
 `;
 
-const AppleTV = styled.img``;
+const AppleTV = styled.div`
+  height: 90px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const ModelImage = styled.img`
   margin: 20px 0;
 `;
@@ -111,8 +118,6 @@ const Addons = styled.div`
   margin: 60px 0;
 
   @media (max-width: 800px) {
-    /* padding: 0 30px; */
-    /* margin: 30px ; */
     margin: 30px 60px;
     width: 100%;
   }
@@ -192,7 +197,9 @@ const Pricing = () => <Container id="pricing">
     </Text>
     <Models>
       <Model>
-        <AppleTV src="/static/pricing-tv-mvp.png" width="107" height="56" />
+        <AppleTV>
+          <img src="/static/pricing-tv-mvp.png" width="107" height="56" alt="" />
+        </AppleTV>
         <ModelImage src="/static/pricing-model-mvp.png" width="156" height="101" />
         <Features>
           <Feature>
@@ -221,7 +228,9 @@ const Pricing = () => <Container id="pricing">
         </Price>
       </Model>
       <Model>
-        <AppleTV src="/static/pricing-tv-advanced.png" width="122" height="71" />
+        <AppleTV>
+          <img src="/static/pricing-tv-advanced.png" width="121" height="70" alt="" />
+        </AppleTV>
         <ModelImage src="/static/pricing-model-advanced.png" width="156" height="101" />
         <Features>
           <Feature>
@@ -253,7 +262,9 @@ const Pricing = () => <Container id="pricing">
         </Price>
       </Model>
       <Model>
-        <AppleTV src="/static/pricing-tv-ultimate.png" width="141" height="89" />
+        <AppleTV>
+          <img src="/static/pricing-tv-ultimate.png" width="140" height="90" alt="" />
+        </AppleTV>
         <ModelImage src="/static/pricing-model-ultimate.png" width="156" height="101" />
         <Features>
           <Feature>

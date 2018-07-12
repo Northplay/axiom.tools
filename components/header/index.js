@@ -38,16 +38,20 @@ const Graphic = styled.div`
 `;
 
 const Television = styled.img`
+  height: 996px;
+  width: 1146px;
   position: absolute;
   top: -300px;
-  right: -35px;
+  right: -150px;
+  z-index: 5;
 `;
 
 const Text = styled.div`
   flex: 0 1 55%;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  position: relative;
+  z-index: 400;
 
   @media (max-width: 800px) {
     flex: 0 1 100%;
@@ -79,11 +83,7 @@ const Header = ({ pricing }) => <Container>
     <Text>
       <Logo src="/static/logo.png" alt="Axiom" />
       <Bread>
-        Axiom is a framework for better streaming Apple TV Apps.
-        We have taken everything we have learned building best-in-class
-        native experiences for the big screen and created a system
-        of reusable components that will make your Apple TV app both
-        affordable and powerful.
+        Axiom is a framework for better streaming Apple TV Apps. We have taken everything we have learned building best-in-class native experiences for the big screen and created a system of reusable components that will make your Apple TV app both affordable and powerful.
         <Pricing
           text="Pricing"
           emoji="👇"
