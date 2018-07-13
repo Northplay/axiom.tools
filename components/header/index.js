@@ -73,6 +73,10 @@ const Pricing = styled(Button)`
   background-color: #18c9f9;
   background: linear-gradient(0.25turn, #7800dd, #0d7bff, #00ffff);
   margin-top: 40px;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 10px rgba(95,46,229,0.4);
+  }
 `;
 
 const Header = ({ pricing }) => <Container>
