@@ -30,7 +30,6 @@ const Main = ({ children }) => <div>
 
     <title>Axiom</title>
 
-    <meta httpEquiv="Content-Security-Policy" content="default-src 'self'" />
     <meta name="description" content="A framework for better streaming Apple TV Apps" />
     <meta name="google-site-verification" content="oA5UKv_3jX3wjJDQBm1ahC6FjkPY-cvKurWawTbRhHY" />
 
