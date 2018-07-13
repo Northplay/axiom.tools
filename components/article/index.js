@@ -76,7 +76,7 @@ const Article = () => <StyledContainer>
     <Text>
       <Block>
         <Span>
-          When building some of the most advanced Apple TV solutions in the Nordics we realized something: Most apple TV apps out there aren’t that great. They don’t follow platform conventions and suffer from restrictions imposed by other platforms.
+          When building some of the most advanced Apple TV solutions in the Nordics we realized something: Most Apple TV apps out there aren’t that great. They don’t follow platform conventions and suffer from restrictions imposed by other platforms.
         </Span>
         <Break />
         <Span>

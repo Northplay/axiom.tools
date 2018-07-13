@@ -193,7 +193,7 @@ const Pricing = () => <Container id="pricing">
       Pricing
     </Title>
     <Text>
-      One of the biggest advantages of using a system like Axiom to built your product is that we can stand on the shoulders of previous integrations and deliver native solutions in weeks rather than months. Here’s some time and price examples of our Axiom powered solutions.
+      One of the biggest advantages of using a system like Axiom to build your product is that we can stand on the shoulders of previous integrations and deliver native solutions in weeks rather than months. Here’s some time and price examples of our Axiom powered solutions.
     </Text>
     <Models>
       <Model>

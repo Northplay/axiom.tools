@@ -38,6 +38,16 @@ const Main = ({ children }) => <div>
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
     <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
 
+    <meta property="og:title" content="Axiom" />
+    <meta property="og:description" content="A framework for better streaming Apple TV Apps" />
+    <meta property="og:image" content="/static/shareimage.png" />
+    <meta property="og:url" content="https://axiom.tools" />
+
+    <meta name="twitter:image" content="/static/shareimage.png" />
+    <meta name="twitter:site" content="@heynorthplay" />
+    <meta name="twitter:title" content="Axiom" />
+    <meta name="twitter:description" content="A framework for better streaming Apple TV Apps" />
+    <meta name="twitter:card" content="summary" />
   </Head>
   <div>
     {children}
