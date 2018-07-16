@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { StyledContainer, StyledContent } from '../../lib/styles';
 
-const Content = StyledContent.extend`
+const Content = styled(StyledContent)`
   color: #232322;
   font-size: 20px;
   line-height: 1.6em;
@@ -20,8 +20,19 @@ const Header = styled.h1`
   text-align: center;
   margin-bottom: 90px;
 
+  @media (max-width: 420px) {
+    flex-wrap: wrap;
+  }
+
   @media (max-width: 800px) {
     margin-bottom: 50px;
+  }
+`;
+
+const HeaderBread = styled.span`
+  @media (max-width: 420px) {
+    flex: 1 0 100%;
+    margin: 10px 0;
   }
 `;
 
@@ -65,13 +76,13 @@ const Span = styled.p`
 const Article = () => <StyledContainer>
   <Content>
     <Header>
-      <span>
+      <HeaderBread>
         A framework for better
-      </span>
+      </HeaderBread>
       <AppleTV src="/static/apple-tv.jpg" />
-      <span>
+      <HeaderBread>
         Apps
-      </span>
+      </HeaderBread>
     </Header>
     <Text>
       <Block>

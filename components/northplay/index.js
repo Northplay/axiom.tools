@@ -27,6 +27,11 @@ const Title = styled.h2`
   line-height: 1.4em;
   text-transform: uppercase;
   margin-top: -50px;
+  text-align: center;
+
+  @media (max-width: 420px) {
+    font-size: 30px;
+  }
 `;
 
 const Text = styled.p`
@@ -46,6 +51,10 @@ const Contact = styled(Button)`
   &:hover {
     box-shadow: 0px 0px 20px 10px rgba(255, 239, 63, 0.4);
   }
+
+  @media (max-width: 420px) {
+    font-size: 20px;
+  }
 `;
 
 const Northplay = () => <Container>
@@ -62,7 +71,11 @@ const Northplay = () => <Container>
       Our passion is entertainment design, games and experiences on the big screen.
     </Text>
     <Contact
-      onClick={() => { Router.push('https://northplay.co/'); }}
+      onClick={() => {
+        if (window !== undefined) {
+          window.location = 'https://northplay.co/';
+        }
+      }}
       text="Learn more about us"
       emoji="👋"
     />

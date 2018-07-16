@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import reset from 'styled-reset';
-import { injectGlobal } from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 
 import { reactChildren } from '../lib/defaultProptypes';
 
@@ -23,10 +23,14 @@ injectGlobal`
   }
 `;
 
+const Container = styled.div`
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+`;
+
 const Main = ({ children }) => <div>
   <Head>
     <meta charSet="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
     <title>Axiom</title>
 
@@ -47,7 +51,7 @@ const Main = ({ children }) => <div>
     <meta name="twitter:site" content="@heynorthplay" />
     <meta name="twitter:title" content="Axiom" />
     <meta name="twitter:description" content="A framework for better streaming Apple TV Apps" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
   </Head>
   <div>
     {children}

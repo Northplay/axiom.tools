@@ -185,6 +185,11 @@ const Contact = styled(Button)`
   background-color: #18c9f9;
   background: linear-gradient(0.25turn, #7800dd, #0d7bff, #00ffff);
   margin: 60px;
+
+  @media (max-width: 420px) {
+    margin: 60px 0;
+    font-size: 20px;
+  }
 `;
 
 const Pricing = () => <Container id="pricing">
