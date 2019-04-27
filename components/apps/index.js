@@ -38,8 +38,7 @@ const App = styled.a`
 
 const AppImage = styled.img`
   box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.08);
-  flex: 1 1 100%;
-  width: 100%;
+  max-width: 100%;
   height: auto !important;
 `;
 
