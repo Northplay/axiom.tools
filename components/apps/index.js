@@ -50,7 +50,7 @@ const Footnote = styled.div`
 
 const Apps = () => <StyledContainer>
   <Content>
-    <App href="https://northplay.co/dr-tv/" target="_blank">
+    <App href="https://northplay.co/case/dr-tv/" target="_blank">
       <AppImage src="/static/app-dr.jpg" />
       <Footnote>
         DR TV Built with Axiom
