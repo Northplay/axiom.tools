@@ -14,7 +14,7 @@
 		"deploy": "git push origin master && git push web master"
 	},
 	"dependencies": {
-		"next": "^6.1.1",
+		"next": "^9.3.2",
 		"prop-types": "^15.6.2",
 		"react": "^16.4.1",
 		"react-dom": "^16.4.1",
